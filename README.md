@@ -121,7 +121,7 @@ python3 --version
 Run the application:
 
 ```bash
-python3 cafe_management.py
+python3 cm.py
 ```
 
 ---
@@ -143,7 +143,7 @@ python3 --version
 Run:
 
 ```bash
-python3 cafe_management.py
+python3 cm.py
 ```
 
 ---
@@ -165,7 +165,7 @@ python --version
 Run:
 
 ```bash
-python cafe_management.py
+python cm.py
 ```
 
 ---
@@ -175,13 +175,13 @@ python cafe_management.py
 After cloning the repository:
 
 ```bash
-python cafe_management.py
+python cm.py
 ```
 
 or
 
 ```bash
-python3 cafe_management.py
+python3 cm.py
 ```
 
 ---
