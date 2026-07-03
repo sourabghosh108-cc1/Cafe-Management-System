@@ -1,116 +1,192 @@
-# Cafe-Management-System
+# ☕ Cafe Management System
 
-## Overview
+A simple Python-based Cafe Management System that demonstrates fundamental programming concepts such as variables, data types, arithmetic operations, assignment operators, user input, conditional statements, and formatted output.
 
-This project demonstrates fundamental Python programming concepts through a simple Café Management System. The program allows a customer to enter their name, choose a menu item, specify a quantity, and receive a calculated total cost.
-
-The project was developed as part of a Programming Fundamentals discussion activity and showcases the practical application of variables, data types, arithmetic operations, assignment operators, user input, and control flow.
+This project was developed as part of the **Programming Fundamentals (CS 1101)** coursework and simulates a basic café ordering system where customers can select menu items, enter quantities, and receive a calculated bill.
 
 ---
 
-## Features
+## 🚀 Repository
 
-* Accepts customer information through user input.
-* Supports multiple café menu items.
-* Calculates total purchase cost automatically.
-* Uses conditional statements to validate menu selections.
-* Handles unavailable menu items gracefully.
-* Displays formatted output with currency values.
-* Demonstrates beginner-level Python programming concepts.
+[GitHub Repository](https://github.com/sourabghosh108-cc1/Cafe-Management-System?utm_source=chatgpt.com)
 
 ---
 
-## Programming Concepts Demonstrated
+## 📖 Features
 
-### Variables
+* Customer order processing
+* Menu item selection
+* Quantity-based billing
+* Automatic total cost calculation
+* Input validation for unavailable menu items
+* Formatted receipt-style output
+* Beginner-friendly Python code
 
-Variables store information entered by the user and data used by the program.
+---
 
-Examples:
+## 🛠 Technologies Used
 
-```python
-customer_name = "Emma"
-menu_item = "cappuccino"
-quantity = 2
-price = 5.00
-```
+* Python 3
+* Command Line Interface (CLI)
 
-### Data Types
+---
 
-| Data Type        | Example        | Purpose                 |
-| ---------------- | -------------- | ----------------------- |
-| String (`str`)   | `"Cappuccino"` | Store menu item names   |
-| Integer (`int`)  | `2`            | Store quantity ordered  |
-| Float (`float`)  | `5.00`         | Store item prices       |
-| Boolean (`bool`) | `True`         | Store item availability |
+## 📂 Project Structure
 
-### Arithmetic Operators
-
-Used to calculate the customer's total cost.
-
-```python
-total_cost = price * quantity
-```
-
-### Assignment Operators
-
-Used to assign and update values.
-
-```python
-total_cost = 0
-total_cost += price * quantity
-```
-
-### Control Flow
-
-Conditional statements allow the program to make decisions.
-
-```python
-if menu_item == "cappuccino":
-    price = 5.00
-elif menu_item == "latte":
-    price = 4.50
-else:
-    print("Item not available.")
+```text
+Cafe-Management-System/
+│
+├── cafe_management.py
+├── Cafe_Management_System.exe
+├── README.md
+└── screenshots/
 ```
 
 ---
 
-## Source Code
+## 📥 Installation
 
-```python
-# Café Management System
+### Method 1: Download the Windows Executable
 
-customer_name = input("Enter customer name: ")
+If you do not want to install Python, you can use the pre-built executable.
 
-menu_item = input("Enter menu item: ").strip().lower()
+Download:
 
-quantity = int(input("Enter quantity: "))
+[Google Drive Download (EXE)](https://drive.google.com/file/d/1njesBGrv3Lg3NDQ7Kn8iMDAxEgYtr9s5/view?usp=sharing&utm_source=chatgpt.com)
 
-if menu_item == "cappuccino":
-    price = 5.00
+### Steps
 
-elif menu_item == "latte":
-    price = 4.50
+1. Download the executable.
+2. Extract it if it is inside a ZIP archive.
+3. Double-click the `.exe` file.
+4. Follow the on-screen instructions.
 
-elif menu_item == "espresso":
-    price = 3.00
+No Python installation is required.
 
-else:
-    print("Sorry, the selected menu item is not available.")
-    exit()
+---
 
-total_cost = price * quantity
+## 📥 Installation from GitHub
 
-print(
-    f"Customer {customer_name} is buying {quantity} cups of "
-    f"{menu_item}. Total cost: ${total_cost:.2f}"
-)
+### Clone the Repository
+
+```bash
+git clone https://github.com/sourabghosh108-cc1/Cafe-Management-System.git
+```
+
+Move into the project folder:
+
+```bash
+cd Cafe-Management-System
 ```
 
 ---
 
-## Sample Run
+## 🐍 Python Installation
+
+### Windows
+
+Download Python from:
+
+[Python Official Website](https://www.python.org/downloads/?utm_source=chatgpt.com)
+
+Verify installation:
+
+```bash
+python --version
+```
+
+or
+
+```bash
+py --version
+```
+
+---
+
+### Ubuntu / Debian
+
+Install Python:
+
+```bash
+sudo apt update
+sudo apt install python3
+```
+
+Verify:
+
+```bash
+python3 --version
+```
+
+Run the application:
+
+```bash
+python3 cafe_management.py
+```
+
+---
+
+### Fedora
+
+Install Python:
+
+```bash
+sudo dnf install python3
+```
+
+Verify:
+
+```bash
+python3 --version
+```
+
+Run:
+
+```bash
+python3 cafe_management.py
+```
+
+---
+
+### Arch Linux
+
+Install Python:
+
+```bash
+sudo pacman -S python
+```
+
+Verify:
+
+```bash
+python --version
+```
+
+Run:
+
+```bash
+python cafe_management.py
+```
+
+---
+
+## ▶ Running the Program
+
+After cloning the repository:
+
+```bash
+python cafe_management.py
+```
+
+or
+
+```bash
+python3 cafe_management.py
+```
+
+---
+
+## 💻 Example
 
 ### Input
 
@@ -128,67 +204,90 @@ Customer Emma is buying 2 cups of cappuccino. Total cost: $10.00
 
 ---
 
-## How to Run
+## 📚 Programming Concepts Demonstrated
 
-### Requirements
+### Variables
 
-* Python 3.x
-
-### Steps
-
-1. Download or clone the repository.
-
-```bash
-git clone <repository-url>
+```python
+customer_name = "Emma"
+quantity = 2
+price = 5.00
 ```
 
-2. Navigate to the project directory.
+### Data Types
 
-```bash
-cd cafe-management-system
+| Data Type        | Example      | Usage             |
+| ---------------- | ------------ | ----------------- |
+| String (`str`)   | "Cappuccino" | Menu item name    |
+| Integer (`int`)  | 2            | Quantity ordered  |
+| Float (`float`)  | 5.00         | Item price        |
+| Boolean (`bool`) | True         | Item availability |
+
+### Arithmetic Operators
+
+```python
+total_cost = price * quantity
 ```
 
-3. Run the program.
+### Assignment Operators
 
-```bash
-python cafe_management.py
+```python
+total_cost += price * quantity
 ```
 
-4. Follow the on-screen prompts.
+### Conditional Statements
+
+```python
+if menu_item == "cappuccino":
+    price = 5.00
+elif menu_item == "latte":
+    price = 4.50
+else:
+    print("Item not available")
+```
 
 ---
 
-## Possible Future Improvements
+## 🔮 Future Improvements
 
-* Add more menu items.
-* Apply discounts and taxes.
-* Generate customer receipts.
-* Store orders in files or databases.
-* Track inventory automatically.
-* Create a graphical user interface (GUI).
-* Support multiple customer orders in a single session.
+* Multiple item orders
+* Discount support
+* GST/Tax calculation
+* Inventory management
+* Receipt generation
+* Database integration
+* GUI using Tkinter
+* Web version using Flask
 
 ---
 
-## Learning Outcomes
+## 🎓 Learning Outcomes
 
 This project demonstrates:
 
-* User input and output
-* Python variables
-* Data types (`str`, `int`, `float`, `bool`)
-* Arithmetic operators
-* Assignment operators
-* Conditional statements (`if`, `elif`, `else`)
-* String manipulation methods (`strip()`, `lower()`)
-* Formatted output using f-strings
+* Python Basics
+* User Input and Output
+* Variables
+* Data Types
+* Arithmetic Operations
+* Assignment Operators
+* Conditional Statements
+* String Manipulation
+* Formatted Output
+* Problem Solving
 
 ---
 
-## Author
+## 👨‍💻 Author
 
 **Sourab Ghosh**
 
-Programming Fundamentals – Unit 1 Discussion Activity
-
 University of the People
+
+Course: CS 1101 – Programming Fundamentals
+
+---
+
+## 📜 License
+
+This project is intended for educational and learning purposes. Feel free to use, modify, and improve it for personal learning.
