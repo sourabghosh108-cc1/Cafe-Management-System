@@ -1,7 +1,5 @@
 # Cafe-Management-System
 
-# Café Management System – Python Programming Fundamentals
-
 ## Overview
 
 This project demonstrates fundamental Python programming concepts through a simple Café Management System. The program allows a customer to enter their name, choose a menu item, specify a quantity, and receive a calculated total cost.
