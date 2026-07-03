@@ -77,6 +77,8 @@ Move into the project folder:
 
 ```bash
 cd Cafe-Management-System
+
+chmod +x *
 ```
 
 ---
